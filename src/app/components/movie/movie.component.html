@@ -1,0 +1,15 @@
+<div class="image_info_container">
+    <div class="image_div">
+        <div class="img_container" [style.backgroundImage]="'url('+ movie.imageUrl +')'"></div>
+    </div>
+    <div class="movie_info">    
+        <h3>{{ movie.title | titlecase}} <span class="movie_year">({{ movie.year }})</span></h3>
+        <p><span class="directors">Directed by:</span> {{ movie.directors | titlecase}}</p>
+        <p><span class="directors">Genres:</span> {{ movie.genres | titlecase}}</p>
+        <span><i class="far fa-clock"></i>{{ movie.runtime }} min</span>
+    </div>
+</div>
+<div class="movie_buttons_container">
+    <button class="edit_btn" (click)="showEditForm()">Edit<i class="fas fa-pencil-alt"></i></button>
+    <button class="delete_btn" (click)="showDeleteForm()">Delete<i class="fas fa-trash-alt"></i></button>
+</div>

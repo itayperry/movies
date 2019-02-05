@@ -1,0 +1,50 @@
+footer {
+    background-color: #081c24;
+    font-family: 'Sarabun', sans-serif;
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+span {
+    display: block;
+}
+
+img {
+    padding-left: 0.5rem;
+}
+
+#github-link {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.fa-github {
+    font-size: 1.5rem;
+    color: #a05151;
+}
+
+#tmdb-rights {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: #419393;
+    font-family: helvetica;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #01c16c;
+}
+
+footer div {
+    margin-bottom: 1rem;
+}

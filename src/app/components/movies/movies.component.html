@@ -1,0 +1,7 @@
+<app-header></app-header>
+<main class="all_movies_container" *ngIf="this.movieDataService.movies">
+    <app-movie class="single_movie_container" *ngFor="let movie of this.movieDataService.movies" [movie]="movie">
+    </app-movie>
+</main>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

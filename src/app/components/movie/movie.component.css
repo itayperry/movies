@@ -1,0 +1,122 @@
+.image_info_container {
+	display: flex;
+}
+
+@media only screen and (max-width: 500px) {
+  .image_info_container {
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .image_div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img_container {
+  	border-radius: 4px;
+  	margin-top: 0.5rem;
+  }
+}
+
+.image_div {
+	height: 231px;
+}
+
+.img_container {
+	width: 154px;
+	text-align: center;
+	height: 100%;
+	background-color: #0b1d21;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	border-top-left-radius: 4px;
+	background-size: contain;
+	transition: opacity 100ms;
+	opacity: 0.9;
+	will-change: opacity;
+}
+
+.img_container:hover {
+	opacity: 1;
+}
+
+.movie_image {
+	border-top-left-radius: 4px;
+    display: block;
+	margin-right: 0.5rem;
+}
+
+.movie_info {
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    padding-bottom: 0.5rem;
+}
+
+.movie_year {
+	opacity: 0.6;
+    font-size: 1rem;
+}
+
+.directors {
+	font-weight: 700;
+}
+
+.fa-clock {
+	color: #a05151;
+	padding-right: 0.5rem;
+}
+
+.movie_buttons_container {
+	width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    justify-content: space-between;
+    background-color: #0b1d21;
+    color: #5a6c70;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 0 14px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+button {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #2e4339;
+    outline: none;
+    color: #01ca6e;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: all 0.4s;
+    font-family: 'Sarabun', sans-serif;
+    display: inline-block;
+    width: auto;
+    white-space: nowrap;
+    background-color: #081c24;
+    color: #fff;
+    transition: none;
+    padding: 5px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.fa-trash-alt {
+	padding-left: 0.5rem;
+	color: #a93333;
+}
+
+.fa-pencil-alt {
+	padding-left: 0.5rem;
+	color: #01c16c;
+}
+
+button:hover {
+	background-color: #fff;
+	color: black;
+}

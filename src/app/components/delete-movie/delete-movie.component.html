@@ -1,0 +1,19 @@
+<div class="popup_container" (click)="modalClick($event)">
+	<div class="contain_form">
+		<div (click)="closePopup()">
+			<i class="material-icons close_popup">close</i>	
+		</div>
+		<form #form="ngForm" (ngSubmit)="onSubmit(form)" *ngIf="movie">
+			<div class="img_container">
+				<img src="{{ movie.imageUrl }}" alt="" width="154px" (error)="defaultImage($event)" class="image">
+			</div>
+		    <div id="user-confirmation">
+		    	<span>Are you sure you want to delete the movie "{{ movie.title }}" ?</span>
+		    </div>
+		    <div class="btns_container">
+		    	<button type="submit">delete<i class="fas fa-trash-alt"></i></button>
+		    	<button type="button" (click)="closePopup()">Cancel</button>
+		  	</div>  
+		</form>
+	</div>
+</div>

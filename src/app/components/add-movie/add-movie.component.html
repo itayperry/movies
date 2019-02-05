@@ -1,0 +1,40 @@
+<div class="popup_container" (click)="modalClick($event)">
+	<div class="contain_form scroll-style">
+		<div (click)="closePopup()">
+			<i class="material-icons close_popup">close</i>	
+		</div>
+		<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+			<div class="img_container">
+				<img src="{{ this.defaultImg }}" alt="" width="154px" (error)="defaultImage($event)" class="image">
+			</div>
+      		<mat-form-field>
+		    	<input matInput placeholder="Title" type="text" name="title" ngModel required>
+				<span *ngIf="errors.validTitleName" class="errorMsg">Invlid value: at least 2 characters (accepts also ,.':-)</span>
+				<span *ngIf="errors.validTitleDuplicity" class="errorMsg">Title already exists</span>
+      		</mat-form-field>
+      		<mat-form-field>
+		    	<input matInput placeholder="Directors" type="text" name="directors" ngModel required>
+		    	<span *ngIf="errors.validDirectors" class="errorMsg">At least two characters</span>
+      		</mat-form-field>
+       		<mat-form-field>
+		    	<input matInput placeholder="Image URL:" type="text" name="imageUrl" ngModel (input)="updateImage($event)">
+      		</mat-form-field>
+      		<mat-form-field>
+		    	<input matInput placeholder="Year" type="number" name="year" ngModel required>
+	      		<span *ngIf="errors.validYear" class="errorMsg">Valid between 1900 to 2020</span>
+      		</mat-form-field>
+      		<mat-form-field>
+		    	<input matInput placeholder="Genres" type="text" name="genres" ngModel required>
+	      		<span *ngIf="errors.validGenres" class="errorMsg">At least two characters</span>
+      		</mat-form-field>
+      		<mat-form-field>
+		    	<input matInput placeholder="Runtime (minutes)" type="number" name="runtime" ngModel required>
+	      		<span *ngIf="errors.validRuntime" class="errorMsg">Valid between 15 to 260</span>
+      		</mat-form-field>
+		    <div>
+		    	<button type="submit">ADD<i class="fas fa-pencil-alt"></i></button>
+		  	</div>  
+		</form>
+	</div>
+</div>
+
