@@ -1,6 +1,9 @@
 # Movies
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
+![add](https://user-images.githubusercontent.com/37377389/52966301-98f50a80-33af-11e9-81fb-0adbedd59f0e.PNG)
+![edit](https://user-images.githubusercontent.com/37377389/52966302-98f50a80-33af-11e9-9107-e1e5fceee040.PNG)
+![movies](https://user-images.githubusercontent.com/37377389/52966304-98f50a80-33af-11e9-9142-dd5a62bfde93.PNG)
 
 ## Development server
 
