@@ -7,6 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 #
 ![movies](https://user-images.githubusercontent.com/37377389/52966304-98f50a80-33af-11e9-9142-dd5a62bfde93.PNG)
 
+#
 ![edit](https://user-images.githubusercontent.com/37377389/52966302-98f50a80-33af-11e9-9107-e1e5fceee040.PNG)
 
 ## Development server
