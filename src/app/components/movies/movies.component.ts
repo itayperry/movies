@@ -8,15 +8,17 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-  
   public subscription: Subscription;
 
   constructor(private movieDataService: MovieDataService) {}
 
   ngOnInit() {
-  	this.movieDataService.setMoviesSubject();
-  	this.subscription = this.movieDataService.getMoviesSubject()
-  	.subscribe(data => this.movieDataService.movies = data)
+    this.movieDataService.setMoviesSubject();
+    this.subscription = this.movieDataService
+      .getMoviesSubject()
+      .subscribe(data => {
+        console.log(data);
+        this.movieDataService.movies = data;
+      });
   }
-
 }
