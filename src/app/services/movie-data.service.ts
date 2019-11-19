@@ -14,7 +14,7 @@ export class MovieDataService {
   public moviesSubject = new BehaviorSubject(null);
   public id: number = 0;
 
-  constructor(private http: HttpClient) {}
+  constructor(public http: HttpClient) {}
 
   setMoviesSubject() {
     this.getList().subscribe(data => {
